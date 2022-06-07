@@ -120,3 +120,71 @@ body {
 .sitenav__link:hover {
     color: var(--brand-color);
 }
+/* SITENAV LEFT STYLES */
+.sitenav-left {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    padding: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+}
+.sitenav-left__close {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    cursor: pointer;
+    margin-left: auto;
+    margin-bottom: 5rem;
+}
+.burger-btn {
+    padding: 0.5rem 2rem;
+    border: none;
+    outline: none;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+}
+.burger-btn__img {
+    object-fit: contain;
+}
+.sitenav-left__remove {
+    transform: translate(-100%);
+    transition: transform 0.5s ease;
+}
+.sitenav-left__add {
+    transform: translate(0%);
+    transition: transform 0.5s ease;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    
+}
+@media only screen and (max-width: 992px) {
+    
+}
+@media only screen and (max-width: 768px) {
+    
+}
+@media only screen and (max-width: 576px) {
+    .site-header {
+        min-height: 70vh;
+    }
+    .sitenav {
+        display: none;
+    }
+    .sitenav__list {
+        flex-direction: column;
+    }
+    .sitenav__item:not(:last-child) {
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+    }
+    .sitenav__link {
+        font-size: 2rem;
+    }
+}
